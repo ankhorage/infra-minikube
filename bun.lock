@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "@ankhorage/minikube",
+      "name": "@ankhorage/infra-minikube",
       "dependencies": {
         "@ankhorage/contracts": "^26.0.2",
         "@ankhorage/kubernetes": "^0.8.2",

@@ -4,7 +4,7 @@
 
 ## Repository
 
-Package: `@ankhorage/minikube`
+Package: `@ankhorage/infra-minikube`
 
 Minikube runtime adapter for provider-neutral Ankhorage infrastructure.
 
