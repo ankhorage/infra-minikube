@@ -1,5 +1,5 @@
 {
-  "name": "@ankhorage/minikube",
+  "name": "@ankhorage/infra-minikube",
   "version": "0.4.126",
   "description": "Minikube runtime adapter for provider-neutral Ankhorage infrastructure.",
   "type": "module",
@@ -9,11 +9,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ankhorage/minikube.git"
+    "url": "git+https://github.com/ankhorage/infra-minikube.git"
   },
-  "homepage": "https://github.com/ankhorage/minikube#readme",
+  "homepage": "https://github.com/ankhorage/infra-minikube#readme",
   "bugs": {
-    "url": "https://github.com/ankhorage/minikube/issues"
+    "url": "https://github.com/ankhorage/infra-minikube/issues"
   },
   "keywords": [
     "ankhorage",
