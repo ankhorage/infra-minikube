@@ -1,5 +1,11 @@
 # @ankhorage/minikube
 
+## 0.4.128
+
+### Patch Changes
+
+- dcf5ad6: Publish releases through npm Trusted Publishing instead of a bootstrap token.
+
 ## 0.4.127
 
 ### Patch Changes
