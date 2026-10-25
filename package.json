@@ -1,6 +1,6 @@
 {
   "name": "@ankhorage/infra-minikube",
-  "version": "0.4.128",
+  "version": "0.4.129",
   "description": "Minikube runtime adapter for provider-neutral Ankhorage infrastructure.",
   "type": "module",
   "main": "./dist/index.js",

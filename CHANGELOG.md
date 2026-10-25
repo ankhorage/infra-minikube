@@ -1,5 +1,11 @@
 # @ankhorage/minikube
 
+## 0.4.129
+
+### Patch Changes
+
+- b9ec249: Fix native Node ESM resolution for the published adapter package.
+
 ## 0.4.128
 
 ### Patch Changes
