@@ -1,7 +1,7 @@
 import type { InfraExecutionContext } from '@ankhorage/contracts/infra';
 import type { KubernetesDriverRequest } from '@ankhorage/kubernetes';
 
-import type { MinikubeDesiredState } from '../../../types/minikubeRuntime';
+import type { MinikubeDesiredState } from '../../../types/minikubeRuntime.js';
 
 /*** Map runtime desired state to the shared Kubernetes driver boundary. */
 export function createKubernetesDriverRequest(

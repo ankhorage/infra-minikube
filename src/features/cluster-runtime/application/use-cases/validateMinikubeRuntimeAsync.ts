@@ -3,8 +3,8 @@ import type { InfraExecutionContext, InfraResult } from '@ankhorage/contracts/in
 import type {
   MinikubeAdapterOptions,
   MinikubeDesiredState,
-} from '../../../../types/minikubeRuntime';
-import { getMinikubeClusterSpec } from '../../utils/getMinikubeClusterSpec';
+} from '../../../../types/minikubeRuntime.js';
+import { getMinikubeClusterSpec } from '../../utils/getMinikubeClusterSpec.js';
 
 /*** Validate Minikube selection, portable compute target and local control-plane prerequisites. */
 export async function validateMinikubeRuntimeAsync(

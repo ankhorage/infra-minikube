@@ -1,14 +1,14 @@
 import type { InfraWorkloadSpec } from '@ankhorage/contracts/infra';
 import { expect, it } from 'bun:test';
 
-import { createSubprocessMinikubeCommandRunner } from './features/cluster-runtime/adapters/createSubprocessMinikubeCommandRunner';
+import { createSubprocessMinikubeCommandRunner } from './features/cluster-runtime/adapters/createSubprocessMinikubeCommandRunner.js';
 import type {
   MinikubeClusterSpec,
   MinikubeCommandRequest,
   MinikubeCommandResult,
   MinikubeCommandRunner,
-} from './index';
-import { createMinikubeCliControlPlane } from './index';
+} from './index.js';
+import { createMinikubeCliControlPlane } from './index.js';
 
 it('operates one exact Minikube profile through the stateless CLI boundary', async () => {
   const runner = new FakeMinikubeCommandRunner();

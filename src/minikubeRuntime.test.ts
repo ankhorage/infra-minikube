@@ -6,9 +6,9 @@ import type {
 } from '@ankhorage/contracts/infra';
 import { expect, it } from 'bun:test';
 
-import { createInfraAdapter } from './index';
-import { FakeMinikubeControlPlane } from './runtimeFixtures.test';
-import type { MinikubeClusterObservation } from './types/minikubeRuntime';
+import { createInfraAdapter } from './index.js';
+import { FakeMinikubeControlPlane } from './runtimeFixtures.test.js';
+import type { MinikubeClusterObservation } from './types/minikubeRuntime.js';
 
 it('plans and converges the complete local runtime lifecycle', async () => {
   const controlPlane = new FakeMinikubeControlPlane();

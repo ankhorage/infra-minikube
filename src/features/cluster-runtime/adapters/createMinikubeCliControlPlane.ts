@@ -6,11 +6,11 @@ import type {
   MinikubeClusterSpec,
   MinikubeCommandRunner,
   MinikubeControlPlane,
-} from '../../../types/minikubeRuntime';
-import { createSubprocessMinikubeCommandRunner } from './createSubprocessMinikubeCommandRunner';
-import { inspectMinikubeAsync } from './inspectMinikubeAsync';
-import { delayMinikubePollAsync, runCheckedMinikubeCommandAsync } from './minikubeCliProcess';
-import { readMinikubeEndpoints } from './readMinikubeEndpoints';
+} from '../../../types/minikubeRuntime.js';
+import { createSubprocessMinikubeCommandRunner } from './createSubprocessMinikubeCommandRunner.js';
+import { inspectMinikubeAsync } from './inspectMinikubeAsync.js';
+import { delayMinikubePollAsync, runCheckedMinikubeCommandAsync } from './minikubeCliProcess.js';
+import { readMinikubeEndpoints } from './readMinikubeEndpoints.js';
 
 const IMAGE_LOAD_ATTEMPTS = 3;
 

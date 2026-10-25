@@ -9,11 +9,11 @@ import type {
   MinikubeAdapterOptions,
   MinikubeClusterObservation,
   MinikubeDesiredState,
-} from '../../../../types/minikubeRuntime';
-import { createKubernetesDriverRequest } from '../../utils/createKubernetesDriverRequest';
-import { createMinikubeClusterOwner } from '../../utils/createMinikubeClusterOwner';
-import { getMinikubeClusterSpec } from '../../utils/getMinikubeClusterSpec';
-import { validateMinikubeRuntimeAsync } from './validateMinikubeRuntimeAsync';
+} from '../../../../types/minikubeRuntime.js';
+import { createKubernetesDriverRequest } from '../../utils/createKubernetesDriverRequest.js';
+import { createMinikubeClusterOwner } from '../../utils/createMinikubeClusterOwner.js';
+import { getMinikubeClusterSpec } from '../../utils/getMinikubeClusterSpec.js';
+import { validateMinikubeRuntimeAsync } from './validateMinikubeRuntimeAsync.js';
 
 /*** Plan Minikube cluster and standard Kubernetes resources without mutation. */
 export async function planMinikubeRuntimeAsync(

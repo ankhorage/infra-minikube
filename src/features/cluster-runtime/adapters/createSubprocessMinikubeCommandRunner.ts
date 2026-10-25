@@ -4,7 +4,7 @@ import type {
   MinikubeCommandRequest,
   MinikubeCommandResult,
   MinikubeCommandRunner,
-} from '../../../types/minikubeRuntime';
+} from '../../../types/minikubeRuntime.js';
 
 /** Create the concrete shell-free subprocess boundary used by Minikube operations. */
 export function createSubprocessMinikubeCommandRunner(): MinikubeCommandRunner {

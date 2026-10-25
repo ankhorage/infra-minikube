@@ -3,7 +3,7 @@ import type { InfraResult, InfraWorkloadSpec } from '@ankhorage/contracts/infra'
 import type {
   MinikubeClusterIdentity,
   MinikubeEndpointOutput,
-} from '../../../types/minikubeRuntime';
+} from '../../../types/minikubeRuntime.js';
 
 /*** Resolve deterministic reachable URLs for ports exposed by the owned Minikube profile. */
 export function readMinikubeEndpoints(

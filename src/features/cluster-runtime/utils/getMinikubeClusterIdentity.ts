@@ -1,6 +1,6 @@
 import type { InfraExecutionContext, InfraResult } from '@ankhorage/contracts/infra';
 
-import type { MinikubeClusterIdentity } from '../../../types/minikubeRuntime';
+import type { MinikubeClusterIdentity } from '../../../types/minikubeRuntime.js';
 
 /*** Resolve the active Minikube identity from the canonical environment selection. */
 export function getMinikubeClusterIdentity(
