@@ -1,5 +1,11 @@
 # @ankhorage/minikube
 
+## 0.4.127
+
+### Patch Changes
+
+- 78dedf5: Rename the Minikube infrastructure adapter package.
+
 ## 0.4.126
 
 ### Patch Changes

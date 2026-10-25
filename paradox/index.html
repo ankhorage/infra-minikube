@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>@ankhorage/minikube • Paradox</title>
+    <title>@ankhorage/infra-minikube • Paradox</title>
     <style>
       :root {
         color-scheme: light;
@@ -115,7 +115,7 @@
     <div class="layout">
       <aside class="sidebar">
         <p class="muted">Generated with Paradox</p>
-        <h1>@ankhorage/minikube</h1>
+        <h1>@ankhorage/infra-minikube</h1>
         <p>Minikube runtime adapter for provider-neutral Ankhorage infrastructure.</p>
         <input id="search" class="search" type="search" placeholder="Search current view" />
         <nav aria-label="Documentation sections">
@@ -844,70 +844,70 @@ reconciliation are delegated to the published Kubernetes driver.</p>
     <h3>Architecture overview</h3>
     <p class="muted"><code>diagrams/architecture-overview.mmd</code></p>
     <div class="mermaid">graph TD
-  package__ankhorage_minikube[&quot;@ankhorage/minikube&quot;]
+  package__ankhorage_infra_minikube[&quot;@ankhorage/infra-minikube&quot;]
   entrypoint_src_index_ts[&quot;src/index.ts&quot;]
-  package__ankhorage_minikube --&gt; entrypoint_src_index_ts
+  package__ankhorage_infra_minikube --&gt; entrypoint_src_index_ts
   module_examples_basic_usage_index_ts[&quot;examples/basic-usage/index.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_examples_basic_usage_index_ts
+  package__ankhorage_infra_minikube -.-&gt; module_examples_basic_usage_index_ts
   module_examples_basic_usage_index_ts --&gt; module_dist_index_d_ts
   module_src_constants_infra_ts[&quot;src/constants/infra.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_constants_infra_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_constants_infra_ts
   module_src_features_cluster_runtime_adapters_createMinikubeCliControlPlane_ts[&quot;src/features/cluster-runtime/adapters/createMinikubeCliControlPlane.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_features_cluster_runtime_adapters_createMinikubeCliControlPlane_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_features_cluster_runtime_adapters_createMinikubeCliControlPlane_ts
   module_src_features_cluster_runtime_adapters_createMinikubeCliControlPlane_ts --&gt; module_src_features_cluster_runtime_adapters_createSubprocessMinikubeCommandRunner_ts
   module_src_features_cluster_runtime_adapters_createMinikubeCliControlPlane_ts --&gt; module_src_features_cluster_runtime_adapters_inspectMinikubeAsync_ts
   module_src_features_cluster_runtime_adapters_createMinikubeCliControlPlane_ts --&gt; module_src_features_cluster_runtime_adapters_minikubeCliProcess_ts
   module_src_features_cluster_runtime_adapters_createMinikubeCliControlPlane_ts --&gt; module_src_features_cluster_runtime_adapters_readMinikubeEndpoints_ts
   module_src_features_cluster_runtime_adapters_createMinikubeCliControlPlane_ts --&gt; module_src_types_minikubeRuntime_ts
   module_src_features_cluster_runtime_adapters_createSubprocessMinikubeCommandRunner_ts[&quot;src/features/cluster-runtime/adapters/createSubprocessMinikubeCommandRunner.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_features_cluster_runtime_adapters_createSubprocessMinikubeCommandRunner_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_features_cluster_runtime_adapters_createSubprocessMinikubeCommandRunner_ts
   module_src_features_cluster_runtime_adapters_createSubprocessMinikubeCommandRunner_ts --&gt; module_src_types_minikubeRuntime_ts
   module_src_features_cluster_runtime_adapters_inspectMinikubeAsync_ts[&quot;src/features/cluster-runtime/adapters/inspectMinikubeAsync.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_features_cluster_runtime_adapters_inspectMinikubeAsync_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_features_cluster_runtime_adapters_inspectMinikubeAsync_ts
   module_src_features_cluster_runtime_adapters_inspectMinikubeAsync_ts --&gt; module_src_features_cluster_runtime_adapters_minikubeCliProcess_ts
   module_src_features_cluster_runtime_adapters_inspectMinikubeAsync_ts --&gt; module_src_types_minikubeRuntime_ts
   module_src_features_cluster_runtime_adapters_minikubeCliProcess_ts[&quot;src/features/cluster-runtime/adapters/minikubeCliProcess.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_features_cluster_runtime_adapters_minikubeCliProcess_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_features_cluster_runtime_adapters_minikubeCliProcess_ts
   module_src_features_cluster_runtime_adapters_minikubeCliProcess_ts --&gt; module_src_types_minikubeRuntime_ts
   module_src_features_cluster_runtime_adapters_readMinikubeEndpoints_ts[&quot;src/features/cluster-runtime/adapters/readMinikubeEndpoints.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_features_cluster_runtime_adapters_readMinikubeEndpoints_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_features_cluster_runtime_adapters_readMinikubeEndpoints_ts
   module_src_features_cluster_runtime_adapters_readMinikubeEndpoints_ts --&gt; module_src_types_minikubeRuntime_ts
   module_src_features_cluster_runtime_application_use_cases_destroyMinikubeRuntimeAsync_ts[&quot;src/features/cluster-runtime/application/use-cases/destroyMinikubeRuntimeAsync.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_features_cluster_runtime_application_use_cases_destroyMinikubeRuntimeAsync_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_features_cluster_runtime_application_use_cases_destroyMinikubeRuntimeAsync_ts
   module_src_features_cluster_runtime_application_use_cases_destroyMinikubeRuntimeAsync_ts --&gt; module_src_features_cluster_runtime_utils_createMinikubeClusterOwner_ts
   module_src_features_cluster_runtime_application_use_cases_destroyMinikubeRuntimeAsync_ts --&gt; module_src_features_cluster_runtime_utils_getMinikubeClusterIdentity_ts
   module_src_features_cluster_runtime_application_use_cases_destroyMinikubeRuntimeAsync_ts --&gt; module_src_types_minikubeRuntime_ts
   module_src_features_cluster_runtime_application_use_cases_ensureMinikubeRuntimeAsync_ts[&quot;src/features/cluster-runtime/application/use-cases/ensureMinikubeRuntimeAsync.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_features_cluster_runtime_application_use_cases_ensureMinikubeRuntimeAsync_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_features_cluster_runtime_application_use_cases_ensureMinikubeRuntimeAsync_ts
   module_src_features_cluster_runtime_application_use_cases_ensureMinikubeRuntimeAsync_ts --&gt; module_src_features_cluster_runtime_application_use_cases_validateMinikubeRuntimeAsync_ts
   module_src_features_cluster_runtime_application_use_cases_ensureMinikubeRuntimeAsync_ts --&gt; module_src_features_cluster_runtime_utils_createKubernetesDriverRequest_ts
   module_src_features_cluster_runtime_application_use_cases_ensureMinikubeRuntimeAsync_ts --&gt; module_src_features_cluster_runtime_utils_createMinikubeClusterOwner_ts
   module_src_features_cluster_runtime_application_use_cases_ensureMinikubeRuntimeAsync_ts --&gt; module_src_features_cluster_runtime_utils_getMinikubeClusterSpec_ts
   module_src_features_cluster_runtime_application_use_cases_ensureMinikubeRuntimeAsync_ts --&gt; module_src_types_minikubeRuntime_ts
   module_src_features_cluster_runtime_application_use_cases_getMinikubeStatusAsync_ts[&quot;src/features/cluster-runtime/application/use-cases/getMinikubeStatusAsync.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_features_cluster_runtime_application_use_cases_getMinikubeStatusAsync_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_features_cluster_runtime_application_use_cases_getMinikubeStatusAsync_ts
   module_src_features_cluster_runtime_application_use_cases_getMinikubeStatusAsync_ts --&gt; module_src_features_cluster_runtime_utils_createKubernetesDriverRequest_ts
   module_src_features_cluster_runtime_application_use_cases_getMinikubeStatusAsync_ts --&gt; module_src_features_cluster_runtime_utils_createMinikubeClusterOwner_ts
   module_src_features_cluster_runtime_application_use_cases_getMinikubeStatusAsync_ts --&gt; module_src_features_cluster_runtime_utils_getMinikubeClusterIdentity_ts
   module_src_features_cluster_runtime_application_use_cases_getMinikubeStatusAsync_ts --&gt; module_src_types_minikubeRuntime_ts
   module_src_features_cluster_runtime_application_use_cases_planMinikubeRuntimeAsync_ts[&quot;src/features/cluster-runtime/application/use-cases/planMinikubeRuntimeAsync.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_features_cluster_runtime_application_use_cases_planMinikubeRuntimeAsync_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_features_cluster_runtime_application_use_cases_planMinikubeRuntimeAsync_ts
   module_src_features_cluster_runtime_application_use_cases_planMinikubeRuntimeAsync_ts --&gt; module_src_features_cluster_runtime_application_use_cases_validateMinikubeRuntimeAsync_ts
   module_src_features_cluster_runtime_application_use_cases_planMinikubeRuntimeAsync_ts --&gt; module_src_features_cluster_runtime_utils_createKubernetesDriverRequest_ts
   module_src_features_cluster_runtime_application_use_cases_planMinikubeRuntimeAsync_ts --&gt; module_src_features_cluster_runtime_utils_createMinikubeClusterOwner_ts
   module_src_features_cluster_runtime_application_use_cases_planMinikubeRuntimeAsync_ts --&gt; module_src_features_cluster_runtime_utils_getMinikubeClusterSpec_ts
   module_src_features_cluster_runtime_application_use_cases_planMinikubeRuntimeAsync_ts --&gt; module_src_types_minikubeRuntime_ts
   module_src_features_cluster_runtime_application_use_cases_suspendMinikubeRuntimeAsync_ts[&quot;src/features/cluster-runtime/application/use-cases/suspendMinikubeRuntimeAsync.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_features_cluster_runtime_application_use_cases_suspendMinikubeRuntimeAsync_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_features_cluster_runtime_application_use_cases_suspendMinikubeRuntimeAsync_ts
   module_src_features_cluster_runtime_application_use_cases_suspendMinikubeRuntimeAsync_ts --&gt; module_src_features_cluster_runtime_utils_createMinikubeClusterOwner_ts
   module_src_features_cluster_runtime_application_use_cases_suspendMinikubeRuntimeAsync_ts --&gt; module_src_features_cluster_runtime_utils_getMinikubeClusterIdentity_ts
   module_src_features_cluster_runtime_application_use_cases_suspendMinikubeRuntimeAsync_ts --&gt; module_src_types_minikubeRuntime_ts
   module_src_features_cluster_runtime_application_use_cases_validateMinikubeRuntimeAsync_ts[&quot;src/features/cluster-runtime/application/use-cases/validateMinikubeRuntimeAsync.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_features_cluster_runtime_application_use_cases_validateMinikubeRuntimeAsync_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_features_cluster_runtime_application_use_cases_validateMinikubeRuntimeAsync_ts
   module_src_features_cluster_runtime_application_use_cases_validateMinikubeRuntimeAsync_ts --&gt; module_src_features_cluster_runtime_utils_getMinikubeClusterSpec_ts
   module_src_features_cluster_runtime_application_use_cases_validateMinikubeRuntimeAsync_ts --&gt; module_src_types_minikubeRuntime_ts
   module_src_features_cluster_runtime_composition_createInfraAdapter_ts[&quot;src/features/cluster-runtime/composition/createInfraAdapter.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_features_cluster_runtime_composition_createInfraAdapter_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_features_cluster_runtime_composition_createInfraAdapter_ts
   module_src_features_cluster_runtime_composition_createInfraAdapter_ts --&gt; module_src_constants_infra_ts
   module_src_features_cluster_runtime_composition_createInfraAdapter_ts --&gt; module_src_features_cluster_runtime_adapters_createMinikubeCliControlPlane_ts
   module_src_features_cluster_runtime_composition_createInfraAdapter_ts --&gt; module_src_features_cluster_runtime_application_use_cases_destroyMinikubeRuntimeAsync_ts
@@ -918,105 +918,105 @@ reconciliation are delegated to the published Kubernetes driver.</p>
   module_src_features_cluster_runtime_composition_createInfraAdapter_ts --&gt; module_src_features_cluster_runtime_application_use_cases_validateMinikubeRuntimeAsync_ts
   module_src_features_cluster_runtime_composition_createInfraAdapter_ts --&gt; module_src_types_minikubeRuntime_ts
   module_src_features_cluster_runtime_utils_createKubernetesDriverRequest_ts[&quot;src/features/cluster-runtime/utils/createKubernetesDriverRequest.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_features_cluster_runtime_utils_createKubernetesDriverRequest_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_features_cluster_runtime_utils_createKubernetesDriverRequest_ts
   module_src_features_cluster_runtime_utils_createKubernetesDriverRequest_ts --&gt; module_src_types_minikubeRuntime_ts
   module_src_features_cluster_runtime_utils_createMinikubeClusterOwner_ts[&quot;src/features/cluster-runtime/utils/createMinikubeClusterOwner.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_features_cluster_runtime_utils_createMinikubeClusterOwner_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_features_cluster_runtime_utils_createMinikubeClusterOwner_ts
   module_src_features_cluster_runtime_utils_createMinikubeClusterOwner_ts --&gt; module_src_types_minikubeRuntime_ts
   module_src_features_cluster_runtime_utils_getMinikubeClusterIdentity_ts[&quot;src/features/cluster-runtime/utils/getMinikubeClusterIdentity.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_features_cluster_runtime_utils_getMinikubeClusterIdentity_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_features_cluster_runtime_utils_getMinikubeClusterIdentity_ts
   module_src_features_cluster_runtime_utils_getMinikubeClusterIdentity_ts --&gt; module_src_types_minikubeRuntime_ts
   module_src_features_cluster_runtime_utils_getMinikubeClusterSpec_ts[&quot;src/features/cluster-runtime/utils/getMinikubeClusterSpec.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_features_cluster_runtime_utils_getMinikubeClusterSpec_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_features_cluster_runtime_utils_getMinikubeClusterSpec_ts
   module_src_features_cluster_runtime_utils_getMinikubeClusterSpec_ts --&gt; module_src_features_cluster_runtime_utils_getMinikubeClusterIdentity_ts
   module_src_features_cluster_runtime_utils_getMinikubeClusterSpec_ts --&gt; module_src_types_minikubeRuntime_ts
   module_src_index_ts[&quot;src/index.ts&quot;]
   module_src_infraAdapter_test_ts[&quot;src/infraAdapter.test.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_infraAdapter_test_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_infraAdapter_test_ts
   module_src_infraAdapter_test_ts --&gt; module_src_index_ts
   module_src_infraAdapter_test_ts --&gt; module_src_runtimeFixtures_test_ts
   module_src_minikubeCliControlPlane_test_ts[&quot;src/minikubeCliControlPlane.test.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_minikubeCliControlPlane_test_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_minikubeCliControlPlane_test_ts
   module_src_minikubeCliControlPlane_test_ts --&gt; module_src_features_cluster_runtime_adapters_createSubprocessMinikubeCommandRunner_ts
   module_src_minikubeCliControlPlane_test_ts --&gt; module_src_index_ts
   module_src_minikubeRuntime_test_ts[&quot;src/minikubeRuntime.test.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_minikubeRuntime_test_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_minikubeRuntime_test_ts
   module_src_minikubeRuntime_test_ts --&gt; module_src_index_ts
   module_src_minikubeRuntime_test_ts --&gt; module_src_runtimeFixtures_test_ts
   module_src_minikubeRuntime_test_ts --&gt; module_src_types_minikubeRuntime_ts
   module_src_runtimeFixtures_test_ts[&quot;src/runtimeFixtures.test.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_runtimeFixtures_test_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_runtimeFixtures_test_ts
   module_src_runtimeFixtures_test_ts --&gt; module_src_index_ts
   module_src_types_minikubeRuntime_ts[&quot;src/types/minikubeRuntime.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_types_minikubeRuntime_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_types_minikubeRuntime_ts
 </div>
     <details>
       <summary>View Mermaid source</summary>
       <pre>graph TD
-  package__ankhorage_minikube[&quot;@ankhorage/minikube&quot;]
+  package__ankhorage_infra_minikube[&quot;@ankhorage/infra-minikube&quot;]
   entrypoint_src_index_ts[&quot;src/index.ts&quot;]
-  package__ankhorage_minikube --&gt; entrypoint_src_index_ts
+  package__ankhorage_infra_minikube --&gt; entrypoint_src_index_ts
   module_examples_basic_usage_index_ts[&quot;examples/basic-usage/index.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_examples_basic_usage_index_ts
+  package__ankhorage_infra_minikube -.-&gt; module_examples_basic_usage_index_ts
   module_examples_basic_usage_index_ts --&gt; module_dist_index_d_ts
   module_src_constants_infra_ts[&quot;src/constants/infra.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_constants_infra_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_constants_infra_ts
   module_src_features_cluster_runtime_adapters_createMinikubeCliControlPlane_ts[&quot;src/features/cluster-runtime/adapters/createMinikubeCliControlPlane.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_features_cluster_runtime_adapters_createMinikubeCliControlPlane_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_features_cluster_runtime_adapters_createMinikubeCliControlPlane_ts
   module_src_features_cluster_runtime_adapters_createMinikubeCliControlPlane_ts --&gt; module_src_features_cluster_runtime_adapters_createSubprocessMinikubeCommandRunner_ts
   module_src_features_cluster_runtime_adapters_createMinikubeCliControlPlane_ts --&gt; module_src_features_cluster_runtime_adapters_inspectMinikubeAsync_ts
   module_src_features_cluster_runtime_adapters_createMinikubeCliControlPlane_ts --&gt; module_src_features_cluster_runtime_adapters_minikubeCliProcess_ts
   module_src_features_cluster_runtime_adapters_createMinikubeCliControlPlane_ts --&gt; module_src_features_cluster_runtime_adapters_readMinikubeEndpoints_ts
   module_src_features_cluster_runtime_adapters_createMinikubeCliControlPlane_ts --&gt; module_src_types_minikubeRuntime_ts
   module_src_features_cluster_runtime_adapters_createSubprocessMinikubeCommandRunner_ts[&quot;src/features/cluster-runtime/adapters/createSubprocessMinikubeCommandRunner.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_features_cluster_runtime_adapters_createSubprocessMinikubeCommandRunner_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_features_cluster_runtime_adapters_createSubprocessMinikubeCommandRunner_ts
   module_src_features_cluster_runtime_adapters_createSubprocessMinikubeCommandRunner_ts --&gt; module_src_types_minikubeRuntime_ts
   module_src_features_cluster_runtime_adapters_inspectMinikubeAsync_ts[&quot;src/features/cluster-runtime/adapters/inspectMinikubeAsync.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_features_cluster_runtime_adapters_inspectMinikubeAsync_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_features_cluster_runtime_adapters_inspectMinikubeAsync_ts
   module_src_features_cluster_runtime_adapters_inspectMinikubeAsync_ts --&gt; module_src_features_cluster_runtime_adapters_minikubeCliProcess_ts
   module_src_features_cluster_runtime_adapters_inspectMinikubeAsync_ts --&gt; module_src_types_minikubeRuntime_ts
   module_src_features_cluster_runtime_adapters_minikubeCliProcess_ts[&quot;src/features/cluster-runtime/adapters/minikubeCliProcess.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_features_cluster_runtime_adapters_minikubeCliProcess_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_features_cluster_runtime_adapters_minikubeCliProcess_ts
   module_src_features_cluster_runtime_adapters_minikubeCliProcess_ts --&gt; module_src_types_minikubeRuntime_ts
   module_src_features_cluster_runtime_adapters_readMinikubeEndpoints_ts[&quot;src/features/cluster-runtime/adapters/readMinikubeEndpoints.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_features_cluster_runtime_adapters_readMinikubeEndpoints_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_features_cluster_runtime_adapters_readMinikubeEndpoints_ts
   module_src_features_cluster_runtime_adapters_readMinikubeEndpoints_ts --&gt; module_src_types_minikubeRuntime_ts
   module_src_features_cluster_runtime_application_use_cases_destroyMinikubeRuntimeAsync_ts[&quot;src/features/cluster-runtime/application/use-cases/destroyMinikubeRuntimeAsync.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_features_cluster_runtime_application_use_cases_destroyMinikubeRuntimeAsync_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_features_cluster_runtime_application_use_cases_destroyMinikubeRuntimeAsync_ts
   module_src_features_cluster_runtime_application_use_cases_destroyMinikubeRuntimeAsync_ts --&gt; module_src_features_cluster_runtime_utils_createMinikubeClusterOwner_ts
   module_src_features_cluster_runtime_application_use_cases_destroyMinikubeRuntimeAsync_ts --&gt; module_src_features_cluster_runtime_utils_getMinikubeClusterIdentity_ts
   module_src_features_cluster_runtime_application_use_cases_destroyMinikubeRuntimeAsync_ts --&gt; module_src_types_minikubeRuntime_ts
   module_src_features_cluster_runtime_application_use_cases_ensureMinikubeRuntimeAsync_ts[&quot;src/features/cluster-runtime/application/use-cases/ensureMinikubeRuntimeAsync.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_features_cluster_runtime_application_use_cases_ensureMinikubeRuntimeAsync_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_features_cluster_runtime_application_use_cases_ensureMinikubeRuntimeAsync_ts
   module_src_features_cluster_runtime_application_use_cases_ensureMinikubeRuntimeAsync_ts --&gt; module_src_features_cluster_runtime_application_use_cases_validateMinikubeRuntimeAsync_ts
   module_src_features_cluster_runtime_application_use_cases_ensureMinikubeRuntimeAsync_ts --&gt; module_src_features_cluster_runtime_utils_createKubernetesDriverRequest_ts
   module_src_features_cluster_runtime_application_use_cases_ensureMinikubeRuntimeAsync_ts --&gt; module_src_features_cluster_runtime_utils_createMinikubeClusterOwner_ts
   module_src_features_cluster_runtime_application_use_cases_ensureMinikubeRuntimeAsync_ts --&gt; module_src_features_cluster_runtime_utils_getMinikubeClusterSpec_ts
   module_src_features_cluster_runtime_application_use_cases_ensureMinikubeRuntimeAsync_ts --&gt; module_src_types_minikubeRuntime_ts
   module_src_features_cluster_runtime_application_use_cases_getMinikubeStatusAsync_ts[&quot;src/features/cluster-runtime/application/use-cases/getMinikubeStatusAsync.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_features_cluster_runtime_application_use_cases_getMinikubeStatusAsync_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_features_cluster_runtime_application_use_cases_getMinikubeStatusAsync_ts
   module_src_features_cluster_runtime_application_use_cases_getMinikubeStatusAsync_ts --&gt; module_src_features_cluster_runtime_utils_createKubernetesDriverRequest_ts
   module_src_features_cluster_runtime_application_use_cases_getMinikubeStatusAsync_ts --&gt; module_src_features_cluster_runtime_utils_createMinikubeClusterOwner_ts
   module_src_features_cluster_runtime_application_use_cases_getMinikubeStatusAsync_ts --&gt; module_src_features_cluster_runtime_utils_getMinikubeClusterIdentity_ts
   module_src_features_cluster_runtime_application_use_cases_getMinikubeStatusAsync_ts --&gt; module_src_types_minikubeRuntime_ts
   module_src_features_cluster_runtime_application_use_cases_planMinikubeRuntimeAsync_ts[&quot;src/features/cluster-runtime/application/use-cases/planMinikubeRuntimeAsync.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_features_cluster_runtime_application_use_cases_planMinikubeRuntimeAsync_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_features_cluster_runtime_application_use_cases_planMinikubeRuntimeAsync_ts
   module_src_features_cluster_runtime_application_use_cases_planMinikubeRuntimeAsync_ts --&gt; module_src_features_cluster_runtime_application_use_cases_validateMinikubeRuntimeAsync_ts
   module_src_features_cluster_runtime_application_use_cases_planMinikubeRuntimeAsync_ts --&gt; module_src_features_cluster_runtime_utils_createKubernetesDriverRequest_ts
   module_src_features_cluster_runtime_application_use_cases_planMinikubeRuntimeAsync_ts --&gt; module_src_features_cluster_runtime_utils_createMinikubeClusterOwner_ts
   module_src_features_cluster_runtime_application_use_cases_planMinikubeRuntimeAsync_ts --&gt; module_src_features_cluster_runtime_utils_getMinikubeClusterSpec_ts
   module_src_features_cluster_runtime_application_use_cases_planMinikubeRuntimeAsync_ts --&gt; module_src_types_minikubeRuntime_ts
   module_src_features_cluster_runtime_application_use_cases_suspendMinikubeRuntimeAsync_ts[&quot;src/features/cluster-runtime/application/use-cases/suspendMinikubeRuntimeAsync.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_features_cluster_runtime_application_use_cases_suspendMinikubeRuntimeAsync_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_features_cluster_runtime_application_use_cases_suspendMinikubeRuntimeAsync_ts
   module_src_features_cluster_runtime_application_use_cases_suspendMinikubeRuntimeAsync_ts --&gt; module_src_features_cluster_runtime_utils_createMinikubeClusterOwner_ts
   module_src_features_cluster_runtime_application_use_cases_suspendMinikubeRuntimeAsync_ts --&gt; module_src_features_cluster_runtime_utils_getMinikubeClusterIdentity_ts
   module_src_features_cluster_runtime_application_use_cases_suspendMinikubeRuntimeAsync_ts --&gt; module_src_types_minikubeRuntime_ts
   module_src_features_cluster_runtime_application_use_cases_validateMinikubeRuntimeAsync_ts[&quot;src/features/cluster-runtime/application/use-cases/validateMinikubeRuntimeAsync.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_features_cluster_runtime_application_use_cases_validateMinikubeRuntimeAsync_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_features_cluster_runtime_application_use_cases_validateMinikubeRuntimeAsync_ts
   module_src_features_cluster_runtime_application_use_cases_validateMinikubeRuntimeAsync_ts --&gt; module_src_features_cluster_runtime_utils_getMinikubeClusterSpec_ts
   module_src_features_cluster_runtime_application_use_cases_validateMinikubeRuntimeAsync_ts --&gt; module_src_types_minikubeRuntime_ts
   module_src_features_cluster_runtime_composition_createInfraAdapter_ts[&quot;src/features/cluster-runtime/composition/createInfraAdapter.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_features_cluster_runtime_composition_createInfraAdapter_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_features_cluster_runtime_composition_createInfraAdapter_ts
   module_src_features_cluster_runtime_composition_createInfraAdapter_ts --&gt; module_src_constants_infra_ts
   module_src_features_cluster_runtime_composition_createInfraAdapter_ts --&gt; module_src_features_cluster_runtime_adapters_createMinikubeCliControlPlane_ts
   module_src_features_cluster_runtime_composition_createInfraAdapter_ts --&gt; module_src_features_cluster_runtime_application_use_cases_destroyMinikubeRuntimeAsync_ts
@@ -1027,37 +1027,37 @@ reconciliation are delegated to the published Kubernetes driver.</p>
   module_src_features_cluster_runtime_composition_createInfraAdapter_ts --&gt; module_src_features_cluster_runtime_application_use_cases_validateMinikubeRuntimeAsync_ts
   module_src_features_cluster_runtime_composition_createInfraAdapter_ts --&gt; module_src_types_minikubeRuntime_ts
   module_src_features_cluster_runtime_utils_createKubernetesDriverRequest_ts[&quot;src/features/cluster-runtime/utils/createKubernetesDriverRequest.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_features_cluster_runtime_utils_createKubernetesDriverRequest_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_features_cluster_runtime_utils_createKubernetesDriverRequest_ts
   module_src_features_cluster_runtime_utils_createKubernetesDriverRequest_ts --&gt; module_src_types_minikubeRuntime_ts
   module_src_features_cluster_runtime_utils_createMinikubeClusterOwner_ts[&quot;src/features/cluster-runtime/utils/createMinikubeClusterOwner.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_features_cluster_runtime_utils_createMinikubeClusterOwner_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_features_cluster_runtime_utils_createMinikubeClusterOwner_ts
   module_src_features_cluster_runtime_utils_createMinikubeClusterOwner_ts --&gt; module_src_types_minikubeRuntime_ts
   module_src_features_cluster_runtime_utils_getMinikubeClusterIdentity_ts[&quot;src/features/cluster-runtime/utils/getMinikubeClusterIdentity.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_features_cluster_runtime_utils_getMinikubeClusterIdentity_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_features_cluster_runtime_utils_getMinikubeClusterIdentity_ts
   module_src_features_cluster_runtime_utils_getMinikubeClusterIdentity_ts --&gt; module_src_types_minikubeRuntime_ts
   module_src_features_cluster_runtime_utils_getMinikubeClusterSpec_ts[&quot;src/features/cluster-runtime/utils/getMinikubeClusterSpec.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_features_cluster_runtime_utils_getMinikubeClusterSpec_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_features_cluster_runtime_utils_getMinikubeClusterSpec_ts
   module_src_features_cluster_runtime_utils_getMinikubeClusterSpec_ts --&gt; module_src_features_cluster_runtime_utils_getMinikubeClusterIdentity_ts
   module_src_features_cluster_runtime_utils_getMinikubeClusterSpec_ts --&gt; module_src_types_minikubeRuntime_ts
   module_src_index_ts[&quot;src/index.ts&quot;]
   module_src_infraAdapter_test_ts[&quot;src/infraAdapter.test.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_infraAdapter_test_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_infraAdapter_test_ts
   module_src_infraAdapter_test_ts --&gt; module_src_index_ts
   module_src_infraAdapter_test_ts --&gt; module_src_runtimeFixtures_test_ts
   module_src_minikubeCliControlPlane_test_ts[&quot;src/minikubeCliControlPlane.test.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_minikubeCliControlPlane_test_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_minikubeCliControlPlane_test_ts
   module_src_minikubeCliControlPlane_test_ts --&gt; module_src_features_cluster_runtime_adapters_createSubprocessMinikubeCommandRunner_ts
   module_src_minikubeCliControlPlane_test_ts --&gt; module_src_index_ts
   module_src_minikubeRuntime_test_ts[&quot;src/minikubeRuntime.test.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_minikubeRuntime_test_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_minikubeRuntime_test_ts
   module_src_minikubeRuntime_test_ts --&gt; module_src_index_ts
   module_src_minikubeRuntime_test_ts --&gt; module_src_runtimeFixtures_test_ts
   module_src_minikubeRuntime_test_ts --&gt; module_src_types_minikubeRuntime_ts
   module_src_runtimeFixtures_test_ts[&quot;src/runtimeFixtures.test.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_runtimeFixtures_test_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_runtimeFixtures_test_ts
   module_src_runtimeFixtures_test_ts --&gt; module_src_index_ts
   module_src_types_minikubeRuntime_ts[&quot;src/types/minikubeRuntime.ts&quot;]
-  package__ankhorage_minikube -.-&gt; module_src_types_minikubeRuntime_ts
+  package__ankhorage_infra_minikube -.-&gt; module_src_types_minikubeRuntime_ts
 </pre>
     </details>
   </article><article class="item" data-search="Module relationships diagrams/module-relationships.mmd">

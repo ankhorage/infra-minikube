@@ -1,6 +1,6 @@
 {
-  "packageName": "@ankhorage/minikube",
-  "packageId": "@ankhorage/minikube",
+  "packageName": "@ankhorage/infra-minikube",
+  "packageId": "@ankhorage/infra-minikube",
   "description": "Minikube runtime adapter for provider-neutral Ankhorage infrastructure.",
   "collaborators": null,
   "donation": null,
@@ -14,7 +14,7 @@
     {
       "id": "npm",
       "label": "npm",
-      "value": "v0.4.126",
+      "value": "v0.4.127",
       "color": "cb3837"
     },
     {
@@ -61,8 +61,8 @@
     }
   ],
   "usage": {
-    "packageName": "@ankhorage/minikube",
-    "command": "ankh minikube --help"
+    "packageName": "@ankhorage/infra-minikube",
+    "command": "ankh infra-minikube --help"
   },
   "usageEntries": [],
   "exampleCount": 1,
