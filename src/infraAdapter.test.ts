@@ -1,8 +1,8 @@
 import { INFRA_ADAPTER_CATALOG, isInfraAdapterDescriptor } from '@ankhorage/contracts/infra';
 import { describe, expect, it } from 'bun:test';
 
-import { createInfraAdapter, infraAdapterDescriptor } from './index';
-import { FakeMinikubeControlPlane } from './runtimeFixtures.test';
+import { createInfraAdapter, infraAdapterDescriptor } from './index.js';
+import { FakeMinikubeControlPlane } from './runtimeFixtures.test.js';
 
 describe('Minikube runtime adapter foundation', () => {
   it('exports the exact Contracts catalog descriptor', () => {

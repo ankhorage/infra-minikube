@@ -1,7 +1,7 @@
 /** Public Minikube runtime adapter package boundary. */
-export { infraAdapterDescriptor } from './constants/infra';
-export { createMinikubeCliControlPlane } from './features/cluster-runtime/adapters/createMinikubeCliControlPlane';
-export { createInfraAdapter } from './features/cluster-runtime/composition/createInfraAdapter';
+export { infraAdapterDescriptor } from './constants/infra.js';
+export { createMinikubeCliControlPlane } from './features/cluster-runtime/adapters/createMinikubeCliControlPlane.js';
+export { createInfraAdapter } from './features/cluster-runtime/composition/createInfraAdapter.js';
 export type {
   MinikubeAdapterOptions,
   MinikubeCliControlPlaneOptions,
@@ -14,4 +14,4 @@ export type {
   MinikubeControlPlane,
   MinikubeDesiredState,
   MinikubeEndpointOutput,
-} from './types/minikubeRuntime';
+} from './types/minikubeRuntime.js';

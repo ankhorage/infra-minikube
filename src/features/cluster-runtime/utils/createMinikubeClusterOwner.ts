@@ -1,6 +1,6 @@
 import type { InfraExecutionContext, InfraOwnedResource } from '@ankhorage/contracts/infra';
 
-import type { MinikubeClusterIdentity } from '../../../types/minikubeRuntime';
+import type { MinikubeClusterIdentity } from '../../../types/minikubeRuntime.js';
 
 /*** Create canonical ownership for the selected Minikube profile. */
 export function createMinikubeClusterOwner(

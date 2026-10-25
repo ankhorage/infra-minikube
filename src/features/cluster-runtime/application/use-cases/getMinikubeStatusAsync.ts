@@ -8,10 +8,10 @@ import { createKubernetesDriver } from '@ankhorage/kubernetes';
 import type {
   MinikubeAdapterOptions,
   MinikubeDesiredState,
-} from '../../../../types/minikubeRuntime';
-import { createKubernetesDriverRequest } from '../../utils/createKubernetesDriverRequest';
-import { createMinikubeClusterOwner } from '../../utils/createMinikubeClusterOwner';
-import { getMinikubeClusterIdentity } from '../../utils/getMinikubeClusterIdentity';
+} from '../../../../types/minikubeRuntime.js';
+import { createKubernetesDriverRequest } from '../../utils/createKubernetesDriverRequest.js';
+import { createMinikubeClusterOwner } from '../../utils/createMinikubeClusterOwner.js';
+import { getMinikubeClusterIdentity } from '../../utils/getMinikubeClusterIdentity.js';
 
 /*** Aggregate Minikube cluster and owned Kubernetes workload status. */
 export async function getMinikubeStatusAsync(

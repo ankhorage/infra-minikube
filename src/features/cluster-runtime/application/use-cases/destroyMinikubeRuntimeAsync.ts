@@ -9,9 +9,9 @@ import { createKubernetesDriver } from '@ankhorage/kubernetes';
 import type {
   MinikubeAdapterOptions,
   MinikubeDesiredState,
-} from '../../../../types/minikubeRuntime';
-import { createMinikubeClusterOwner } from '../../utils/createMinikubeClusterOwner';
-import { getMinikubeClusterIdentity } from '../../utils/getMinikubeClusterIdentity';
+} from '../../../../types/minikubeRuntime.js';
+import { createMinikubeClusterOwner } from '../../utils/createMinikubeClusterOwner.js';
+import { getMinikubeClusterIdentity } from '../../utils/getMinikubeClusterIdentity.js';
 
 /*** Remove owned workloads before deleting Minikube, retaining the cluster when data survives. */
 export async function destroyMinikubeRuntimeAsync(

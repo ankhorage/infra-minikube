@@ -7,8 +7,8 @@ import type {
   MinikubeClusterObservation,
   MinikubeClusterSpec,
   MinikubeCommandRunner,
-} from '../../../types/minikubeRuntime';
-import { runCheckedMinikubeCommandAsync, runMinikubeCommandAsync } from './minikubeCliProcess';
+} from '../../../types/minikubeRuntime.js';
+import { runCheckedMinikubeCommandAsync, runMinikubeCommandAsync } from './minikubeCliProcess.js';
 
 const STATUS_FORMAT = '{{.Host}}|{{.Kubelet}}|{{.APIServer}}|{{.Kubeconfig}}';
 

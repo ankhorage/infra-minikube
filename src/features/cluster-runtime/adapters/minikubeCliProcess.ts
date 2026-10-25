@@ -1,6 +1,9 @@
 import type { InfraResult } from '@ankhorage/contracts/infra';
 
-import type { MinikubeCommandResult, MinikubeCommandRunner } from '../../../types/minikubeRuntime';
+import type {
+  MinikubeCommandResult,
+  MinikubeCommandRunner,
+} from '../../../types/minikubeRuntime.js';
 
 /** Run one command, retaining exit status for state-oriented Minikube commands. */
 export async function runMinikubeCommandAsync(

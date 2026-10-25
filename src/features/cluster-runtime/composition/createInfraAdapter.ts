@@ -1,14 +1,14 @@
 import type { InfraRuntimeAdapter } from '@ankhorage/contracts/infra';
 
-import { infraAdapterDescriptor } from '../../../constants/infra';
-import type { MinikubeAdapterOptions } from '../../../types/minikubeRuntime';
-import { createMinikubeCliControlPlane } from '../adapters/createMinikubeCliControlPlane';
-import { destroyMinikubeRuntimeAsync } from '../application/use-cases/destroyMinikubeRuntimeAsync';
-import { ensureMinikubeRuntimeAsync } from '../application/use-cases/ensureMinikubeRuntimeAsync';
-import { getMinikubeStatusAsync } from '../application/use-cases/getMinikubeStatusAsync';
-import { planMinikubeRuntimeAsync } from '../application/use-cases/planMinikubeRuntimeAsync';
-import { suspendMinikubeRuntimeAsync } from '../application/use-cases/suspendMinikubeRuntimeAsync';
-import { validateMinikubeRuntimeAsync } from '../application/use-cases/validateMinikubeRuntimeAsync';
+import { infraAdapterDescriptor } from '../../../constants/infra.js';
+import type { MinikubeAdapterOptions } from '../../../types/minikubeRuntime.js';
+import { createMinikubeCliControlPlane } from '../adapters/createMinikubeCliControlPlane.js';
+import { destroyMinikubeRuntimeAsync } from '../application/use-cases/destroyMinikubeRuntimeAsync.js';
+import { ensureMinikubeRuntimeAsync } from '../application/use-cases/ensureMinikubeRuntimeAsync.js';
+import { getMinikubeStatusAsync } from '../application/use-cases/getMinikubeStatusAsync.js';
+import { planMinikubeRuntimeAsync } from '../application/use-cases/planMinikubeRuntimeAsync.js';
+import { suspendMinikubeRuntimeAsync } from '../application/use-cases/suspendMinikubeRuntimeAsync.js';
+import { validateMinikubeRuntimeAsync } from '../application/use-cases/validateMinikubeRuntimeAsync.js';
 
 /***
  * Create the canonical Minikube runtime adapter entrypoint.

@@ -12,7 +12,7 @@ import type {
   MinikubeClusterObservation,
   MinikubeClusterSpec,
   MinikubeControlPlane,
-} from './index';
+} from './index.js';
 
 /** Generic in-memory boundary fixture for Minikube and Kubernetes lifecycle acceptance. */
 export class FakeMinikubeControlPlane implements MinikubeControlPlane {

@@ -1,7 +1,7 @@
 import type { InfraExecutionContext, InfraResult } from '@ankhorage/contracts/infra';
 
-import type { MinikubeClusterSpec, MinikubeDesiredState } from '../../../types/minikubeRuntime';
-import { getMinikubeClusterIdentity } from './getMinikubeClusterIdentity';
+import type { MinikubeClusterSpec, MinikubeDesiredState } from '../../../types/minikubeRuntime.js';
+import { getMinikubeClusterIdentity } from './getMinikubeClusterIdentity.js';
 
 /*** Validate and create the local Minikube cluster specification. */
 export function getMinikubeClusterSpec(
