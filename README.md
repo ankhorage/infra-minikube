@@ -3,20 +3,13 @@
 
 # @ankhorage/infra-minikube
 
-![license: MIT](././paradox/badges/license.svg) ![npm: v0.4.132](././paradox/badges/npm.svg) ![runtime: bun](././paradox/badges/runtime.svg) ![typescript: strict](././paradox/badges/typescript.svg) ![eslint: checked](././paradox/badges/eslint.svg) ![prettier: checked](././paradox/badges/prettier.svg) ![build: checked](././paradox/badges/build.svg) ![tests: checked](././paradox/badges/tests.svg) ![paradox: warnings](././paradox/badges/docs.svg)
+![license: MIT](././paradox/badges/license.svg) ![npm: v0.4.133](././paradox/badges/npm.svg) ![runtime: bun](././paradox/badges/runtime.svg) ![typescript: strict](././paradox/badges/typescript.svg) ![eslint: checked](././paradox/badges/eslint.svg) ![prettier: checked](././paradox/badges/prettier.svg) ![build: checked](././paradox/badges/build.svg) ![tests: checked](././paradox/badges/tests.svg) ![paradox: warnings](././paradox/badges/docs.svg)
 
 Minikube runtime adapter for provider-neutral Ankhorage infrastructure.
 
-## Generated documentation
+## Documentation
 
-- [Interactive documentation app](././paradox/index.html)
-- [Public API reference](././paradox/exports.md)
-- [Component registry](././paradox/components.md)
-- [Architecture overview](././paradox/diagrams/architecture-overview.mmd)
-- [Module relationships](././paradox/diagrams/module-relationships.mmd)
-- [Export graph](././paradox/diagrams/export-graph.mmd)
-- [createInfraAdapter sequence](././paradox/diagrams/sequences/create-infra-adapter.mmd)
-- [createMinikubeCliControlPlane sequence](././paradox/diagrams/sequences/create-minikube-cli-control-plane.mmd)
+Open `./paradox/index.html` locally in your browser to browse the complete documentation.
 
 ## Public API
 
@@ -39,3 +32,14 @@ Source: `src/features/cluster-runtime/composition/createInfraAdapter.ts:21:1`
 Related symbols: `MinikubeAdapterOptions`
 
 </details>
+
+## Contributors
+
+<!-- readme: contributors -start -->
+<!-- readme: contributors -end -->
+
+## Donation
+
+If this project is useful to you, you can support its continued development.
+
+[Support @ankhorage](https://github.com/sponsors/ankhorage)
