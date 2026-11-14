@@ -57,7 +57,7 @@
   },
   "dependencies": {
     "@ankhorage/contracts": "^26.11.1",
-    "@ankhorage/kubernetes": "^0.9.0"
+    "@ankhorage/kubernetes": "^0.9.1"
   },
   "devDependencies": {
     "@ankhorage/devtools": "^2.7.0",
