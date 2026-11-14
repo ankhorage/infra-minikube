@@ -1,5 +1,11 @@
 # @ankhorage/minikube
 
+## 0.4.135
+
+### Patch Changes
+
+- 8a9e924: Update dependencies: `@ankhorage/kubernetes`.
+
 ## 0.4.134
 
 ### Patch Changes
