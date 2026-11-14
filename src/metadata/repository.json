@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "kind": "adapter",
+  "title": "Ankhorage Minikube Infrastructure",
+  "summary": "Adapts portable infrastructure workloads to a caller-controlled Minikube cluster.",
+  "purpose": "Provide a Minikube runtime boundary while reusing the shared Kubernetes driver for standard workload behavior.",
+  "domain": "Minikube runtime infrastructure",
+  "responsibilities": [
+    "Compose Minikube-specific cluster control with the shared Kubernetes workload driver.",
+    "Project and reconcile portable workloads on a selected Minikube cluster.",
+    "Expose provider-neutral runtime lifecycle results."
+  ],
+  "boundaries": [
+    "Does not define portable infrastructure contracts.",
+    "Does not duplicate Kubernetes projection and reconciliation behavior.",
+    "Does not own a global Minikube installation or silently select a host profile."
+  ],
+  "audience": [
+    "Infrastructure hosts selecting Minikube as a local runtime.",
+    "Developers testing portable workloads on a caller-controlled Minikube cluster."
+  ],
+  "useCases": [
+    "Deploy a portable workload to Minikube.",
+    "Reconcile and inspect a Minikube-backed runtime.",
+    "Inject a Minikube command boundary suitable for the host or tests."
+  ],
+  "architecture": {
+    "role": "An infrastructure runtime adapter that combines Minikube control with the shared Kubernetes driver.",
+    "invariants": [
+      "The caller supplies the Minikube-specific command boundary.",
+      "Standard Kubernetes behavior is delegated to @ankhorage/kubernetes.",
+      "Runtime results conform to the provider-neutral Infra contract."
+    ]
+  },
+  "implements": [
+    {
+      "packageName": "@ankhorage/contracts",
+      "subpath": "./infra",
+      "interfaceId": "InfraRuntimeAdapter"
+    }
+  ],
+  "constraints": {
+    "platforms": ["Minikube-supported host environments"],
+    "configuration": ["A caller-provided Minikube command boundary is required."],
+    "limitations": ["Cluster provisioning semantics are limited to Minikube."]
+  }
+}
