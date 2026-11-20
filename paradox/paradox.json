@@ -1,7 +1,9 @@
 {
-  "packageName": "@ankhorage/infra-minikube",
+  "packageName": "Ankhorage Minikube Infrastructure",
   "packageId": "@ankhorage/infra-minikube",
-  "description": "Minikube runtime adapter for provider-neutral Ankhorage infrastructure.",
+  "description": "Adapts portable infrastructure workloads to a caller-controlled Minikube cluster.",
+  "purpose": "Provide a Minikube runtime boundary while reusing the shared Kubernetes driver for standard workload behavior.",
+  "productDocumentation": null,
   "collaborators": true,
   "donation": {
     "account": "ankhorage"
@@ -16,7 +18,7 @@
     {
       "id": "npm",
       "label": "npm",
-      "value": "v0.4.135",
+      "value": "v0.4.136",
       "color": "cb3837"
     },
     {
