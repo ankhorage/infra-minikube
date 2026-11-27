@@ -60,7 +60,7 @@
     "@ankhorage/kubernetes": "^0.9.1"
   },
   "devDependencies": {
-    "@ankhorage/devtools": "^2.12.3",
+    "@ankhorage/devtools": "^2.12.4",
     "@ankhorage/paradox": "^0.6.1",
     "@types/bun": "^1.4.2",
     "@types/node": "^26.6.11",
